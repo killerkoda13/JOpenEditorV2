@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" gridLinesVisible="false" hgap="10.0" prefHeight="619.0"
+          prefWidth="826.0" vgap="10.0" xmlns="http://javafx.com/javafx/2.2" fx:controller="JOpenEditorV2.Controller">
+    <children>
+        <BorderPane prefHeight="397.0" prefWidth="437.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <stylesheets>
+                <URL value="@Styles/DarkTheme.css"/>
+            </stylesheets>
+            <top>
+                <ToolBar id="" disable="false" focusTraversable="false" pickOnBounds="false" visible="true">
+                    <items>
+                        <MenuBar useSystemMenuBar="false">
+                            <menus>
+                                <Menu mnemonicParsing="false" style="" text="File">
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" style="" text="Close" visible="true"/>
+                                        <CheckMenuItem mnemonicParsing="false" text="New"/>
+                                    </items>
+                                </Menu>
+                                <Menu mnemonicParsing="false" text="Edit">
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" text="Delete"/>
+                                    </items>
+                                </Menu>
+                                <Menu mnemonicParsing="false" text="Help">
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" onAction="#aboutAction" text="About"/>
+                                    </items>
+                                </Menu>
+                            </menus>
+                        </MenuBar>
+                    </items>
+                </ToolBar>
+            </top>
+        </BorderPane>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+    </rowConstraints>
+</GridPane>
